@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#bgHorizontalLine, #bgVerticalLine {
+    background-position: 10px 10px;
+}
