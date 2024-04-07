@@ -9,11 +9,15 @@ export default {
       gradientColorStopPositions: {
         '1px': 1,
       },
-      // backgroundImage: {
-      //   'gradient-radial':  radial-gradient(at 50% 50%)
-      // },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
+      letterSpacing: {
+        tightest: '-.01em',
+      },
       colors: {
-        'bgEffectColor': 'hsla(146, 63%, 63%, .1)'
+        'bgEffectColor': 'hsla(146, 63%, 63%, .1)',
+        'neoGreen': 'hsla(146, 63%, 63%, 1)',
       }
     },
   },
