@@ -2,7 +2,7 @@
 function Contacts() {
 
     return (
-        <div>
+        <div className='text-slate-300'> 
             contact
         </div>
     )

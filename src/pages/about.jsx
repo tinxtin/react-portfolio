@@ -2,7 +2,7 @@
 function About() {
 
     return (
-        <div>
+        <div className='text-slate-300'>
             about
         </div>
     )

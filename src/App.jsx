@@ -10,32 +10,39 @@ import Contacts from './pages/contacts';
 function App() {
     
     return (
-        <div id='bgGround' className='h-dvh w-screen flex bg-neutral-950'>
-            <div id='bgEffect' className='h-full w-full relative'>
-                <div id='bgHorizontalLine' style={{backgroundPosition: '10px 10px'}} className='h-full w-full fixed bg-gradient-to-r from-bgEffectColor from-1px to-transparent to-1px bg-[length:95px_95px] z-1'></div>
-                <div id='bgVerticalLine' style={{backgroundPosition: '10px 10px'}} className='h-full w-full fixed bg-gradient-to-b from-bgEffectColor from-1px to-transparent to-1px bg-[length:10px_95px] z-1'></div>
+        <div id='page' className='fixed top-0 left-0 w-dvw h-dvh truncate bg-pageColor text-slate-300'>
+            <div id='background' className='fixed left-pad top-pad right-pad bottom-pad bg-neutral-950 z-10'>
+                <div id='bgHorizontalLine' style={{backgroundPosition: '10px 10px'}} className='h-full w-full fixed top-0 left-0 bg-gradient-to-r from-bgEffectColor from-1px to-transparent to-1px bg-[length:95px_95px] z-1'></div>
+                <div id='bgVerticalLine' style={{backgroundPosition: '10px 10px'}} className='h-full w-full fixed top-0 left-0 bg-gradient-to-b from-bgEffectColor from-1px to-transparent to-1px bg-[length:10px_95px] z-1'></div>
                 <div id='bgGlow' className='h-full w-full fixed bg-gradient-radial from-bgEffectColor to-transparent z-0'></div>
-                <div id='bgLayout' className='h-dvh max-w-screen-xl leading-relaxed mx-auto px-6 py-12 lg:flex lg:justify-between lg:gap-4 lg:px-24 lg:py-0 text-gray-300'>
-                    <div className='h-dvh w-dvw flex lg:w-2/5'>
-                        <header className='lg:flex lg:sticky lg:flex-col lg:justify-between lg:max-h-dvh lg:top-0 lg:py-24'>
-                            <Intro/>
-                            <Navbar/>
-                            <Social/>
-                        </header>
-                    </div>
-                    <div className='h-dvh w-dvw flex lg:w-3/5'>
-                    <div id='routeContainer'>
-                                <Routes>
-                                    <Route path='/' element={<About/>}/>
-                                    <Route path='/projects' element={<Projects/>}/>
-                                    <Route path='/contacts' element={<Contacts/>}/>
-                                </Routes>
-                            </div>
-                    </div>
-                </div>
             </div>
+            <div id='frame' className='fixed left-pad top-pad right-pad bottom-pad z-20'>
+                <div id='frameLeft' className='left-0 top-0 w-px h-full absolute bg-neoGreen opacity-50'/>
+                <div id='frameTop' className='left-0 top-0 w-full h-px absolute bg-neoGreen opacity-50'/>
+                <div id='frameRight' className='right-0 top-0 w-px h-full absolute bg-neoGreen opacity-50'/>
+                <div id='frameBottom' className='left-0 bottom-0 w-full h-px absolute bg-neoGreen opacity-50'/>
+            </div>
+            <header className='h-dvh w-dvw flex pl-8'>
+                <div id='siteHeader' className='lg:flex lg:sticky lg:flex-col lg:justify-between lg:max-h-dvh lg:top-0 lg:py-24 z-20'>
+                    <Intro/>
+                    <Navbar/>
+                    <Social/>
+                </div>
+            </header>
+            <main className='h-dvh w-dvw flex z-20'>
+                <div id='routeContainer z-20'>
+                    <Routes>
+                        <Route path='/' element={<About/>}/>
+                        <Route path='/projects' element={<Projects/>}/>
+                        <Route path='/contacts' element={<Contacts/>}/>
+                    </Routes>
+                </div>
+            </main>
         </div>
+        
     );
 };
 
 export default App
+
+'flex h-dvh w-screen flex bg-neutral-950 justify-between'

@@ -8,8 +8,8 @@ function CustomLink({ to, children}) {
 
     return (
         <li className={isActive ? 'active relative m-0 p-0': 'relative m-0 p-0'} >
-            <span className={isActive ? 'absolute h-max leading-none opacity-100 top-[-2] left-[-2px] text-24px pointer-events-none transition-opacity' : 'absolute h-max leading-none opacity-0 top-0 left-[-2px] text-24px transition-opacity'}>●</span>
-            <NavLink to={to} className={({ isActive }) => isActive ? 'relative hover:text-zinc-40  opacity-0 transition-opacity' : 'relative hover:text-zinc-40 opacity-100 transition-opacity'}>
+            <span className={isActive ? 'absolute text-slate-300 h-max leading-none opacity-100 top-[-2] left-[-2px] text-24px pointer-events-none transition-opacity' : 'absolute text-slate-300 h-max leading-none opacity-0 top-0 left-[-2px] text-24px transition-opacity'}>●</span>
+            <NavLink to={to} className={({ isActive }) => isActive ? 'relative text-slate-300 opacity-0 transition-opacity hover:text-zinc-400' : 'relative text-slate-300 opacity-100 transition-opacity hover:text-zinc-400'}>
                 {children}
             </NavLink>
         </li>

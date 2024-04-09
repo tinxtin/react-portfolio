@@ -2,7 +2,7 @@
 function Projects() {
 
     return (
-        <div>
+        <div className='text-slate-300'>
             projects
         </div>
     )
