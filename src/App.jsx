@@ -1,7 +1,11 @@
 import { useState } from 'react'
-import Canvas from './components/animation/matrix';
+import { Route, Routes} from 'react-router-dom'
 import Intro from './components/hero/intro';
 import Social from './components/contacts/social';
+import Navbar from './components/navbar/navbar';
+import About from './pages/about';
+import Projects from './pages/projects';
+import Contacts from './pages/contacts';
 
 function App() {
     
@@ -14,12 +18,19 @@ function App() {
                 <div id='bgLayout' className='h-dvh max-w-screen-xl leading-relaxed mx-auto px-6 py-12 lg:flex lg:justify-between lg:gap-4 lg:px-24 lg:py-0 text-gray-300'>
                     <div className='h-dvh w-dvw flex lg:w-2/5'>
                         <header className='lg:flex lg:sticky lg:flex-col lg:justify-between lg:max-h-dvh lg:top-0 lg:py-24'>
-                            <Intro></Intro>
-                            <Social></Social>
+                            <Intro/>
+                            <Navbar/>
+                            <Social/>
                         </header>
                     </div>
                     <div className='h-dvh w-dvw flex lg:w-3/5'>
-                        test
+                    <div id='routeContainer'>
+                                <Routes>
+                                    <Route path='/' element={<About/>}/>
+                                    <Route path='/projects' element={<Projects/>}/>
+                                    <Route path='/contacts' element={<Contacts/>}/>
+                                </Routes>
+                            </div>
                     </div>
                 </div>
             </div>

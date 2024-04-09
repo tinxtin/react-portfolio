@@ -30,3 +30,13 @@
     left: 0.5px;
     text-shadow: hsla(146, 63%, 63%, 1) 1px 0px;
 }
+
+#siteNav ol li a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+}
