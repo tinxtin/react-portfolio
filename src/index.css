@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    user-select: none;
+}
 
 #introHeader::before,  #introHeader::after, #introTitle::before, #introTitle::after {
     content: attr(data-text);

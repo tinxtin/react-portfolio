@@ -1,10 +1,11 @@
+import Project from '../components/projects/project';
 
 function Projects() {
 
     return (
-        <div className='text-slate-300'>
-            projects
-        </div>
+        <section className='text-slate-300'>
+            <Project/>
+        </section>
     )
 }
 

@@ -23,7 +23,7 @@ function App() {
                 <div id='frameBottom' className='left-0 bottom-0 w-full h-px absolute bg-neoGreen opacity-50'/>
             </div>
             <div id='content' className="h-dvh w-dvw flex lg:justify-between">
-                <header className='h-dvh w-dvw flex pl-2pad py-2pad z-20 lg:w-2/5'>
+                <header className='h-full w-full flex pl-2pad py-2pad z-20 lg:w-2/5'>
                     <div id='siteHeader' className='lg:flex lg:sticky lg:flex-col lg:justify-between lg:max-h-dvh lg:top-0'>
                         <Intro/>
                         <Navbar/>
@@ -31,7 +31,7 @@ function App() {
                     </div>
                 </header>
                 <main className='h-dvh w-dvw flex pr-2pad py-2pad z-20 lg:w-3/5'>
-                    <div id='siteMain'>
+                    <div id='siteMain' className='relative w-full h-full'>
                         <Routes>
                             <Route path='/' element={<About/>}/>
                             <Route path='/projects' element={<Projects/>}/>
