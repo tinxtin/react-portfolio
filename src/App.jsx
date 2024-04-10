@@ -22,22 +22,24 @@ function App() {
                 <div id='frameRight' className='right-0 top-0 w-px h-full absolute bg-neoGreen opacity-50'/>
                 <div id='frameBottom' className='left-0 bottom-0 w-full h-px absolute bg-neoGreen opacity-50'/>
             </div>
-            <header className='h-dvh w-dvw flex pl-8'>
-                <div id='siteHeader' className='lg:flex lg:sticky lg:flex-col lg:justify-between lg:max-h-dvh lg:top-0 lg:py-24 z-20'>
-                    <Intro/>
-                    <Navbar/>
-                    <Social/>
-                </div>
-            </header>
-            <main className='h-dvh w-dvw flex z-20'>
-                <div id='routeContainer z-20'>
-                    <Routes>
-                        <Route path='/' element={<About/>}/>
-                        <Route path='/projects' element={<Projects/>}/>
-                        <Route path='/contacts' element={<Contacts/>}/>
-                    </Routes>
-                </div>
-            </main>
+            <div id='content' className="h-dvh w-dvw flex lg:justify-between">
+                <header className='h-dvh w-dvw flex pl-2pad py-2pad z-20 lg:w-2/5'>
+                    <div id='siteHeader' className='lg:flex lg:sticky lg:flex-col lg:justify-between lg:max-h-dvh lg:top-0'>
+                        <Intro/>
+                        <Navbar/>
+                        <Social/>
+                    </div>
+                </header>
+                <main className='h-dvh w-dvw flex pr-2pad py-2pad z-20 lg:w-3/5'>
+                    <div id='siteMain'>
+                        <Routes>
+                            <Route path='/' element={<About/>}/>
+                            <Route path='/projects' element={<Projects/>}/>
+                            <Route path='/contacts' element={<Contacts/>}/>
+                        </Routes>
+                    </div>
+                </main>
+            </div>
         </div>
         
     );

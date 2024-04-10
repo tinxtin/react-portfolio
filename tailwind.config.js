@@ -29,7 +29,8 @@ export default {
       },
       spacing: {
         '2px': '2px',
-        'pad': 'max(20px, 4vmin)'
+        'pad': 'max(20px, 4vmin)',
+        '2pad': 'calc(max(20px, 4vmin) * 2)'
       },
       transitionDuration: {
         DEFAULT: '400ms'
