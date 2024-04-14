@@ -21,8 +21,6 @@ export default {
       },
       colors: {
         'bgEffectColor': 'hsla(146, 63%, 63%, .1)',
-        'neoGreen': 'hsla(146, 63%, 63%, 1)',
-        'pageColor': 'hsla(0, 0%, 5%, .9)',
       },
       boxShadowColor: {
         'whiteShadow': '0 0 0 2px white',
