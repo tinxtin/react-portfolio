@@ -15,9 +15,23 @@ export default {
       letterSpacing: {
         tightest: '-.01em',
       },
+      fontSize: {
+        '10px': '10px',
+        '24px': '24px'
+      },
       colors: {
         'bgEffectColor': 'hsla(146, 63%, 63%, .1)',
-        'neoGreen': 'hsla(146, 63%, 63%, 1)',
+      },
+      boxShadowColor: {
+        'whiteShadow': '0 0 0 2px white',
+      },
+      spacing: {
+        '2px': '2px',
+        'pad': 'max(20px, 4vmin)',
+        '2pad': 'calc(max(20px, 4vmin) * 2)',
+      },
+      transitionDuration: {
+        '400': '400ms',
       }
     },
   },
