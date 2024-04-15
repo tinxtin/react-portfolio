@@ -10,7 +10,7 @@ import Contacts from './pages/contacts';
 function App() {
     
     return (
-        <div id='page' className='fixed top-0 left-0 w-dvw h-dvh truncate bg-neutral-950/90 text-slate-300'>
+        <div id='page' className='fixed top-0 left-0 w-dvw h-dvh truncate bg-neutral-950/90 text-neutral-300'>
             <div id='background' className='fixed left-pad top-pad right-pad bottom-pad bg-neutral-950 z-10'>
                 <div id='bgHorizontalLine' style={{backgroundPosition: '10px 10px'}} className='h-full w-full fixed top-0 left-0 bg-gradient-to-r from-bgEffectColor from-1px to-transparent to-1px bg-[length:95px_95px] z-1'></div>
                 <div id='bgVerticalLine' style={{backgroundPosition: '10px 10px'}} className='h-full w-full fixed top-0 left-0 bg-gradient-to-b from-bgEffectColor from-1px to-transparent to-1px bg-[length:10px_95px] z-1'></div>
@@ -23,15 +23,15 @@ function App() {
                 <div id='frameBottom' className='left-0 bottom-0 w-full h-px absolute bg-green-300/50'/>
             </div>
             <div id='content' className="h-dvh w-dvw flex lg:justify-between">
-                <header className='h-full w-full flex pl-2pad py-2pad z-20 lg:w-2/5'>
+                <header className='h-full w-full flex pl-2pad py-2pad z-20 lg:w-2/4'>
                     <div id='siteHeader' className='lg:flex lg:sticky lg:flex-col lg:justify-between lg:max-h-dvh lg:top-0'>
                         <Intro/>
                         <Navbar/>
                         <Social/>
                     </div>
                 </header>
-                <main className='h-dvh w-dvw flex pr-2pad py-2pad z-20 lg:w-3/5'>
-                    <div id='siteMain' className='relative w-full h-full'>
+                <main className='h-dvh w-dvw flex justify-end pr-2pad py-2pad z-20 lg:w-2/4'>
+                    <div id='siteMain' className='relative w-3/5 h-full'>
                         <Routes>
                             <Route path='/' element={<About/>}/>
                             <Route path='/projects' element={<Projects/>}/>
