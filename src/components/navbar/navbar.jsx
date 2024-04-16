@@ -1,6 +1,6 @@
 import { useMatch, useResolvedPath, NavLink } from 'react-router-dom';
 
-function CustomLink({ to, children}) {
+function CustomRoute({ to, children}) {
     const resolvedPath = useResolvedPath(to);
     const isActive = useMatch({ path: resolvedPath.pathname, end: true})
 
@@ -17,17 +17,17 @@ function CustomLink({ to, children}) {
 function Navbar() {
 
     return (
-        <nav id='siteNav' className='lg:block hidden'> 
+        <nav id='siteNav' className='lg:block hidden mt-12'> 
             <ol className='flex flex-col list-none gap-y-4'>
-                <CustomLink to='/'>
+                <CustomRoute to='/'>
                     About
-                </CustomLink>
-                <CustomLink to='/projects'>
+                </CustomRoute>
+                <CustomRoute to='/projects'>
                     Projects
-                </CustomLink>
-                <CustomLink to='/contacts'>
+                </CustomRoute>
+                <CustomRoute to='/contacts'>
                     Contacts
-                </CustomLink>
+                </CustomRoute>
             </ol>
         </nav>
     )
