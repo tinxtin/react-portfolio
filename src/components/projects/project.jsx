@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Card({ name, date, type, description, technology }) {
 
-    let techUsed = technology.map((tech, i) => {
+    const techUsed = technology.map((tech, i) => {
         return (
             <li key={i} className='mr-1.5 mt-2'>
                 <div className='flex items-center rounded-full bg-teal-400/10 text-teal-300 px-3 py-1 text-xs font-medium leading-tight'>

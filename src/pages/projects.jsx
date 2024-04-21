@@ -12,7 +12,7 @@ function Projects() {
             tech: [
                 'JavaScript',
                 'Tailwind',
-                'React'
+                'React',
             ]
         },
         {
@@ -27,7 +27,7 @@ function Projects() {
         },
     ]
 
-    let projects = projectList.map((project ,i) => {
+    const projects = projectList.map((project ,i) => {
         return (
             <li key={i}>
                 <Cards name={project.name} date={project.date} type={project.product} description={project.description} technology={project.tech}/>
