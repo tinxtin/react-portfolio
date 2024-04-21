@@ -6,6 +6,10 @@
     user-select: none;
 }
 
+::-webkit-scrollbar {
+    display: none;
+  }
+
 #introHeader::before,  #introHeader::after, #introTitle::before, #introTitle::after {
     content: attr(data-text);
     position: absolute;
@@ -42,4 +46,17 @@
     top: -5px;
     width: calc(100% + 10px);
     height: calc(100% + 10px);
+}
+
+.page {
+    animation: fade-in 1.5s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
 }
