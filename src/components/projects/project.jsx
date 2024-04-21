@@ -2,7 +2,7 @@
 function Project({ name, date, type, description }) {
 
     return (
-        <div id='projects' className='z-20'>
+        <div id='projects'>
             <div className='group grid relative gap-4 grid-cols-8 transition-all'>
                 <div id='containerBorder' className='absolute -left-4 -top-4 -right-4 -bottom-4 rounded-md z-0 transition lg:-left-6 lg:-right-6 lg:group-hover:border-solid lg:group-hover:border-[1px] border-fuchsia-300/50 rounded-none'></div>
                 <div className='col-span-5 order-2 z-10'>
