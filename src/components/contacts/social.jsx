@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 function Social() {
 
     return (
-        <div id='social' className='fixed left-2pad bottom-2pad'>
+        <div id='social' className='fixed left-2space bottom-2space'>
             <ul id='socialList' aria-label='Social Media' className='flex items-center list-none mt-8 ml-1'>
                 <li id='socialApp' className='text-xs mr-5'>
                     <a target='_blank' datatype='data-link'>
