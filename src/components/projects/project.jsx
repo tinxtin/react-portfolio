@@ -1,13 +1,24 @@
+import { Link } from "react-router-dom";
 
-function Project({ name, date, type, description }) {
+function Card({ name, date, type, description, technology }) {
+
+    const techUsed = technology.map((tech, i) => {
+        return (
+            <li key={i} className='mr-1.5 mt-2'>
+                <div className='flex items-center rounded-full bg-teal-400/10 text-teal-300 px-3 py-1 text-xs font-medium leading-tight'>
+                    { tech }
+                </div>
+            </li>
+        )
+    })
 
     return (
-        <div id='projects'>
+        <div id='card'>
             <div className='group grid relative gap-4 grid-cols-8 transition-all'>
                 <div id='containerBorder' className='absolute -left-4 -top-4 -right-4 -bottom-4 rounded-md z-0 transition lg:-left-6 lg:-right-6 lg:group-hover:border-solid lg:group-hover:border-[1px] border-fuchsia-300/50 rounded-none'></div>
                 <div className='col-span-5 order-2 z-10'>
                     <h3 className='font-medium leading-snug text-neutral-300'>
-                        <a href='' className='inline-flex item-baseline leading-tight font-medium text-neutral-300 hover:text-teal-300 focus-visible:text-teal-300'>
+                        <Link to={''} className='inline-flex item-baseline leading-tight font-medium text-neutral-300 hover:text-teal-300 focus-visible:text-teal-300'>
                             <span id='linkBorder' className='absolute -left-4 -top-4 -right-4 -bottom-4 rounded-md sm:-left-6 sm:-right-6'></span>
                             <span id='linkTitle' className=''>
                                 { name }
@@ -17,7 +28,7 @@ function Project({ name, date, type, description }) {
                                     </svg>
                                 </span>
                             </span>
-                        </a> 
+                        </Link> 
                     </h3>
                     <p className='text-sm font-medium leading-normal mt-2 text-balance'>
                         { date } / { type }
@@ -26,26 +37,7 @@ function Project({ name, date, type, description }) {
                         { description }
                     </p>
                     <ul className='mt-2 flex flex-wrap'>
-                        <li className='mr-1.5 mt-2'>
-                            <div className='flex items-center rounded-full bg-teal-400/10 text-teal-300 px-3 py-1 text-xs font-medium leading-tight'>
-                                JavaScript
-                            </div>
-                        </li>
-                        <li className='mr-1.5 mt-2'>
-                            <div className='flex items-center rounded-full bg-teal-400/10 text-teal-300 px-3 py-1 text-xs font-medium leading-tight'>
-                                CSS
-                            </div>
-                        </li>
-                        <li className='mr-1.5 mt-2'>
-                            <div className='flex items-center rounded-full bg-teal-400/10 text-teal-300 px-3 py-1 text-xs font-medium leading-tight'>
-                                HTML
-                            </div>
-                        </li>
-                        <li className='mr-1.5 mt-2'>
-                            <div className='flex items-center rounded-full bg-teal-400/10 text-teal-300 px-3 py-1 text-xs font-medium leading-tight'>
-                                React
-                            </div>
-                        </li>
+                        { techUsed }
                     </ul>
                 </div>
                 <img loading='lazy' width={200} height={48} decoding='async' src='https://placehold.co/600x400' className='col-span-3 border-[1px] transition border-fuchsia-300/50 group-hover:border-fuchsia-300/50' style={{color: 'transparent'}}>
@@ -55,4 +47,4 @@ function Project({ name, date, type, description }) {
     )
 }
 
-export default Project;
+export default Card;
