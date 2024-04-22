@@ -1,14 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+  
 * {
     user-select: none;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-  } */
+  }
+
+@keyframes static-anim {
+    0%, 2.5%, 5%, 7.5%, 10%, 12.5%, 15%, 17.5%, 20%, 22.5%, 25%, 27.5%, 30%, 32.5%, 35%, 37.5%, 40%, 42.5%, 45%, 47.5% {
+        clip-path: inset(0% 100% 0% 0%);
+    }
+
+    50% {
+        clip-path: inset(28% 0px 26%);
+    }
+    52.5% {
+        clip-path: inset(7% 0px 39%);
+    }
+    55% {
+        clip-path: inset(96% 0px 1%);
+    }
+    57.5% {
+        clip-path: inset(75% 0px 23%);
+    }
+    60% {
+        clip-path: inset(48% 0px 53%);
+    }
+    62.5% {
+        clip-path: inset(3% 0px 45%);
+    }
+    65% {
+        clip-path: inset(79% 0px 4%);
+    }
+    67.5% {
+        clip-path: inset(88% 0px 1%);
+    }
+    70% {
+        clip-path: inset(90% 0px 10%);
+    }
+    72.5% {
+        clip-path: inset(98% 0px 3%);
+    }
+    75% {
+        clip-path: inset(55% 0px 33%);
+    }
+    77.5% {
+        clip-path: inset(42% 0px 50%);
+    }
+    80% {
+        clip-path: inset(23% 0px 45%);
+    }
+    82.5% {
+        clip-path: inset(88% 0px 8%);
+    }
+    85% {
+        clip-path: inset(1% 0px 96%);
+    }
+    87.5% {
+        clip-path: inset(87% 0px 5%);
+    }
+    90% {
+        clip-path: inset(95% 0px 5%);
+    }
+    92.5% {
+        clip-path: inset(54% 0px 36%);
+    }
+    95% {
+        clip-path: inset(72% 0px 29%);
+    }
+    97.5% {
+        clip-path: inset(7% 0px 17%);
+    }
+    100% {
+        clip-path: inset(96% 0px 2%);
+    }
+}
 
 #introHeader::before,  #introHeader::after, #introTitle::before, #introTitle::after {
     content: attr(data-text);
@@ -21,12 +92,13 @@
 
 #introHeader::before {
     left: 1.5px;
-    text-shadow: hsla(238, 85%, 75%, 1) -2.5px 0px;
+    text-shadow: hsla(170, 77%, 64%, 1) -2.5px 0px;
 }
 
 #introHeader::after {
     left: -1.5px;
     text-shadow: hsla(146, 63%, 63%, 1) 2.5px 0px;
+    animation: static-anim 2s linear infinite alternate-reverse none running;
 }
 
 #introTitle::before {
@@ -36,6 +108,7 @@
 #introTitle::after {
     left: 0.5px;
     text-shadow: hsla(146, 63%, 63%, 1) 1px 0px;
+    animation: static-anim 2s linear infinite alternate-reverse none running;
 }
 
 #siteNav ol li a::before {
