@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+  
 * {
     user-select: none;
 }
@@ -91,7 +92,7 @@
 
 #introHeader::before {
     left: 1.5px;
-    text-shadow: hsla(238, 85%, 75%, 1) -2.5px 0px;
+    text-shadow: hsla(170, 77%, 64%, 1) -2.5px 0px;
 }
 
 #introHeader::after {

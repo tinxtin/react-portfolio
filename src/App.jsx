@@ -27,7 +27,7 @@ function App() {
         }
 
     return (
-        <div id='page' className='fixed top-0 left-0 w-dvw h-dvh truncate bg-neutral-950 text-neutral-300'>
+        <div id='page' className='fixed top-0 left-0 w-dvw h-dvh truncate bg-neutral-950 text-neutral-300 font-body'>
             <div id='background' className='fixed left-space top-space right-space bottom-space bg-neutral-950 pointer-events-none'>
                 <div id='bgHorizontalLine' style={{backgroundPosition: '10px 10px'}} className='h-full w-full fixed top-0 left-0 bg-gradient-to-r from-bgEffectColor from-1px to-transparent to-1px bg-[length:95px_95px]'></div>
                 <div id='bgVerticalLine' style={{backgroundPosition: '10px 10px'}} className='h-full w-full fixed top-0 left-0 bg-gradient-to-b from-bgEffectColor from-1px to-transparent to-1px bg-[length:10px_95px]'></div>

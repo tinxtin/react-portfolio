@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'body': ['"Play"', 'sans-serif'],
+      },
       gradientColorStopPositions: {
         '1px': 1,
       },
