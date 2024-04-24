@@ -17,8 +17,8 @@ function CustomRoute({ to, children}) {
 function Navbar() {
 
     return (
-        <nav id='siteNav' className='lg:flex hidden mt-12 z-20 w-min cursor-pointer'> 
-            <ol className='flex flex-col list-none gap-y-4'>
+        <nav id='siteNav' className='flex mt-12 z-20 w-min cursor-pointer'> 
+            <ul className='flex flex-col list-none gap-y-4'>
                 <CustomRoute to='/'>
                     About
                 </CustomRoute>
@@ -28,7 +28,7 @@ function Navbar() {
                 <CustomRoute to='/contacts'>
                     Contacts
                 </CustomRoute>
-            </ol>
+            </ul>
         </nav>
     )
 }

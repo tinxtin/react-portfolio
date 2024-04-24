@@ -4,8 +4,8 @@ import Story from '../components/about/about';
 function About() {
 
     return (
-        <section className='page w-full min-h-screen'>
-            <div className='absolute right-2space bottom-2space whitespace-nowrap text-wrap w-1/4 leading-normal'>
+        <section className='flex justify-end w-full h-screen page'>
+            <div className='flex flex-col justify-end whitespace-nowrap text-wrap leading-normal w-1/2'>
                 <Story/>
             </div>
         </section>

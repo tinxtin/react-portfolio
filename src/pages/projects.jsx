@@ -23,6 +23,7 @@ function Projects() {
             tech: [
                 'NextJS',
                 'Tailwind',
+                'React',
             ]
         },
     ]
@@ -30,17 +31,17 @@ function Projects() {
     const projects = projectList.map((project ,i) => {
         return (
             <li key={i}>
-                <Cards name={project.name} date={project.date} type={project.product} description={project.description} technology={project.tech}/>
+                <Cards name={ project.name } date={ project.date } type={ project.product } description={ project.description } technology={ project.tech }/>
             </li>
         )
     })
 
     return (
-        <section className='w-full min-h-screen page'>
-            <div className='py-2space px-2space whitespace-nowrap'>
+        <section className='w-ful max-h-screen page'>
+            <div className='whitespace-nowrap'>
                 <div className="m-0 p-0">
-                    <ul className='flex flex-col items-end gap-y-12'>
-                        {projects}
+                    <ul className='flex flex-col shrink sm:items-end gap-y-12'>
+                        { projects }
                     </ul>
                 </div>
             </div>

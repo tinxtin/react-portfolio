@@ -28,7 +28,7 @@ function Social() {
     })
 
     return (
-        <div id='social' className='fixed left-2space bottom-2space'>
+        <div id='social' className='lg:flex'>
             <ul id='socialList' aria-label='Social Media' className='flex items-center list-none mt-8 ml-1'>
                 { socials }
             </ul>
