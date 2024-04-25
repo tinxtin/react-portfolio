@@ -37,15 +37,13 @@ function Projects() {
     })
 
     return (
-        <section className='w-ful max-h-screen page'>
-            <div className='whitespace-nowrap'>
-                <div className="m-0 p-0">
-                    <ul className='flex flex-col shrink sm:items-end gap-y-12'>
-                        { projects }
-                    </ul>
-                </div>
+        <div className='whitespace-nowrap page'>
+            <div className="m-0 p-0">
+                <ul className='flex flex-col shrink sm:items-end gap-y-12'>
+                    { projects }
+                </ul>
             </div>
-        </section>
+        </div>
     )
 }
 

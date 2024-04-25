@@ -53,7 +53,7 @@ function App() {
                     </div>
                     <Social/>
                 </header>
-                <main id='main' data-scroll='area' className='lg:flex lg:flex-col lg:py-2space lg:max-h-screen lg:w-1/2 h-min z-20' ref={myRef}>
+                <main id='main' data-scroll='area' className='lg:flex lg:py-2space lg:min-h-screen lg:w-1/2 z-20' ref={myRef}>
                     <Routes>
                         <Route path='/' element={<About/>}/>
                         <Route path='/projects' element={<Projects/>}/>
