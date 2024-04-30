@@ -45,20 +45,22 @@ function App() {
                 <div id='frameRight' className='right-0 top-0 w-px h-full absolute bg-green-300/50'/>
                 <div id='frameBottom' className='left-0 bottom-0 w-full h-px absolute bg-green-300/50'/>
             </div>
-            <header id='header' className='fixed top-2space left-2space z-30' ref={myRef}>                
-                <Intro/>
-                <Navbar/>
-                <Social/>
-            </header>
-            <main id='main' data-scroll='area' className='fixed left-0 top-0 w-full m-0 p-0 h-full z-20' ref={myRef}>
-                <div className='relative min-h-full'>
+            <div className='lg:flex lg:justify-between lg:overflow-hidden overflow-y-auto h-screen px-2space'>
+                <header id='header' className='lg:flex lg:flex-col lg:py-2space lg:justify-between sticky lg:w-min lg:max-h-screen pt-2space pb-space' ref={myRef}>
+                    <div>
+                        <Intro/>
+                        <Navbar/>
+                    </div>
+                    <Social/>
+                </header>
+                <main id='main' data-scroll='area' className='lg:py-2space pb-2space lg:w-1/2 z-2' ref={myRef}>
                     <Routes>
                         <Route path='/' element={<About/>}/>
                         <Route path='/projects' element={<Projects/>}/>
                         <Route path='/contacts' element={<Contacts/>}/>
                     </Routes>
-                </div>
-            </main>
+                </main>
+            </div>
         </div>
     );
 };

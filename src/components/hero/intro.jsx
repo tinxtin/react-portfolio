@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+
 
 function Intro() {
 
@@ -10,9 +10,6 @@ function Intro() {
             <h2 id='introTitle' data-text='Designer & Developer' className='relative text-slate-300 text-lg font-medium leading-7 tracking-wider mt-3 sm:text-xl'>
                 <mark id='introMark' className='relative text-inherit p-0 bg-transparent'>Designer & Developer</mark>
             </h2>
-            {/* <p id='introText' className='text-slate-300 leading-normal mt-4'>
-                I focus on Website development with a keen eye for creating engaging UI design
-            </p> */}
         </div>
     )
 }

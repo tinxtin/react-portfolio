@@ -17,9 +17,9 @@ function Social() {
     const socials = paths.map((social, i) => {
         return (
             <li key={i} id='socialApp' className='text-xs mr-5'>
-                <Link to={''} target='_blank' datatype='data-link'>
+                <Link to={'/'} target='_blank' datatype='data-link' className='cursor-pointer transition-colors hover:text-teal-300'>
                     <span className='absolute w-px h-px p-0 m-px overflow-hidden whitespace-nowrap border-0'>{ social.name }</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-github w-6 h-6 cursor-pointer transition-colors hover:text-teal-300" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="min-w-6 min-h-6" viewBox="0 0 16 16">
                         { social.path }
                     </svg>
                 </Link>
@@ -28,11 +28,9 @@ function Social() {
     })
 
     return (
-        <div id='social' className='fixed left-2space bottom-2space'>
-            <ul id='socialList' aria-label='Social Media' className='flex items-center list-none mt-8 ml-1'>
-                { socials }
-            </ul>
-        </div>
+        <ul id='socialList' aria-label='Social Media' className='flex items-center list-none mt-8'>
+            { socials }
+        </ul>
     )
 }
 

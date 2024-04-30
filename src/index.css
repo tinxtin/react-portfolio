@@ -96,7 +96,7 @@
 }
 
 #introHeader::after {
-    left: -1.5px;
+    left: .5px;
     text-shadow: hsla(146, 63%, 63%, 1) 2.5px 0px;
     animation: static-anim 2s linear infinite alternate-reverse none running;
 }
@@ -106,7 +106,7 @@
 }
 
 #introTitle::after {
-    left: 0.5px;
+    left: .5px;
     text-shadow: hsla(146, 63%, 63%, 1) 1px 0px;
     animation: static-anim 2s linear infinite alternate-reverse none running;
 }

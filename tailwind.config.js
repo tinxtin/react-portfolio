@@ -30,6 +30,7 @@ export default {
       },
       spacing: {
         '2px': '2px',
+        'md-main': 'calc(40% - max(1vmin, 5vmin))' ,
         'space': 'max(1vmin, 5vmin)',
         '2space': 'calc(max(1vmin, 5vmin) * 2)',
         '3space': 'calc(max(1vmin, 5vmin) * 3)',
