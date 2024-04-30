@@ -37,13 +37,13 @@ function Projects() {
     })
 
     return (
-        <div className='whitespace-nowrap page'>
+        <section className='relative whitespace-nowrap page'>
             <div className="m-0 p-0">
-                <ul className='flex flex-col shrink sm:items-end gap-y-12'>
+                <ul className='flex flex-col shrink lg:items-end gap-y-12'>
                     { projects }
                 </ul>
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -14,9 +14,9 @@ function Card({ name, date, type, description, technology }) {
 
     return (
         <div id='card' className='flex-shrink'>
-            <div className='group grid relative gap-4 sm:grid-cols-5 sm:gap-8 transition-all'>
+            <div className='group grid relative gap-4 sm:grid-cols-6 sm:gap-8 transition-all'>
                 <div id='containerBorder' className='absolute -left-4 -top-4 -right-4 -bottom-4 z-0 transition lg:-left-6 lg:-right-6 lg:group-hover:border-solid lg:group-hover:border-[1px] border-fuchsia-300/50 rounded-none'></div>
-                <div className='sm:col-span-3 sm:order-2 z-10'>
+                <div className='sm:col-span-4 sm:order-2 z-10'>
                     <h3 className='font-medium leading-snug text-neutral-300'>
                         <Link to={''} className='inline-flex item-baseline leading-tight font-medium text-neutral-300 hover:text-teal-300 focus-visible:text-teal-300'>
                             <span id='linkBorder' className='absolute -left-4 -top-4 -right-4 -bottom-4 sm:-left-6 sm:-right-6'></span>
